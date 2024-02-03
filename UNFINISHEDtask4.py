@@ -2,13 +2,13 @@ f = open('vacancy.csv',encoding="utf8").readlines()
 a = []
 i = 0
 listoftypes = []
-averageoftypes = [] #На каждый элемент для listoftypes будет элемент в averageoftypes с тем-же индексом
+averageoftypes = [] #ГЌГ  ГЄГ Г¦Г¤Г»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ Г¤Г«Гї listoftypes ГЎГіГ¤ГҐГІ ГЅГ«ГҐГ¬ГҐГ­ГІ Гў averageoftypes Г± ГІГҐГ¬-Г¦ГҐ ГЁГ­Г¤ГҐГЄГ±Г®Г¬
 
 for el in f:
-    #Инициализация таблицы и поиск трёх максимально оплачиваемых вакансий
+    #Г€Г­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї ГІГ ГЎГ«ГЁГ¶Г» ГЁ ГЇГ®ГЁГ±ГЄ ГІГ°ВёГµ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г® Г®ГЇГ«Г Г·ГЁГўГ ГҐГ¬Г»Гµ ГўГ ГЄГ Г­Г±ГЁГ©
     a.append(el.split(';')[:])
     a[i][4] = a[i][4][:-1]
-    if a[i][1] not in listoftypes: listoftypes.append(a[i][1]) #Заполнение списка типов работ
+    if a[i][1] not in listoftypes: listoftypes.append(a[i][1]) #Г‡Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г±ГЇГЁГ±ГЄГ  ГІГЁГЇГ®Гў Г°Г ГЎГ®ГІ
     if i == 0:
         a[0][0] = a[0][0][1:]
         i+=1
